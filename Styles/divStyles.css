@@ -1,0 +1,488 @@
+div {
+	position:absolute;
+	margin:auto;
+}
+
+.answerStrapDiv {
+	width:1920px;
+	height:96px;
+	left:0px;
+	right:0px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.answerGroupADiv {
+	-webkit-transform-origin-x:960px;
+	-webkit-transform-origin-y:-174px;
+	-webkit-transform-origin-z:0px;
+}
+
+.answerGroupBDiv {
+	-webkit-transform-origin-x:960px;
+	-webkit-transform-origin-y:-74px;
+	-webkit-transform-origin-z:0px;
+}
+
+.answerStrapLifeLineCenterDiv {
+	bottom:62px;
+	left:0px;
+	right:0px;
+	width:150px;
+	height:122px;
+}
+
+.answerStrapLifeLineCenterContainerDiv {
+	bottom:0px;
+	left:0px;
+	right:0px;
+	top:0px;
+	width:150px;
+	height:122px;
+}
+
+.ataGraphDiv {
+	width:330px;
+	height:500px;
+	background:url('../Images/audience_graph.png') no-repeat;
+	top:125px;
+	right:-330px;
+}
+
+.ataGraphBarDiv {
+	background:url('../Images/audience_answer_bar.png') no-repeat;
+	width:45px;
+	bottom:50px;
+}
+
+.ataGraphPercentDiv{
+	font-family:Verdana;
+	font-size:20pt;
+	text-align:center;
+	width:75px;
+	color:white;
+	top:20px;
+}
+
+.ataPercentStrapDiv {
+	width:146px;
+	height:70px;
+	background:url('../Images/ata_percent_strap_background.png') no-repeat;
+	top:0px;
+	bottom:0px;
+	left:15px;
+	color:white;
+	font-family:Verdana;
+	font-size:28pt;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+	
+}
+
+.contestantNameAndLocationDiv {
+	width:1920px;
+	height:244px;
+	bottom:18px;
+	background:url('../Images/Large_Win_Strap_Stretched_Gradient_Filled.png') no-repeat;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.currentLevelStrapDiv {
+	width:504px;
+	height:55px;
+	background:url('../Images/small_side_strap_fill.png') no-repeat;
+	top:106px;
+	left:-504px;
+	overflow:hidden;
+}
+
+.currentPassStrapDiv {
+	width:504px;
+	height:55px;
+	background:url('../Images/small_side_strap_fill.png') no-repeat;
+	top:160px;
+	left:-504px;
+	overflow:hidden;
+}
+
+.currentLevelStrapAmountDiv{
+	color:white;
+	font-family:'Copperplate31bc';
+	font-size:35pt;
+	height:46px;
+	width:733px;
+	top:0px;
+	bottom:0px;
+	left:-37px;
+	text-align:center;
+	text-shadow:2px 2px 0px black;
+	letter-spacing:-2px;
+	scale:100% 100%;
+}
+
+.currentPassStrapTextDiv{
+	color:white;
+	font-family:'Copperplate31bc-Celador01';
+	font-size:25pt;
+	height:32px;
+	width:733px;
+	top:0px;
+	bottom:0px;
+	left:-35px;
+	text-align:center;
+	scale:100% 100%;
+}
+
+.fastestContestantDiv {
+	height:80px;
+	width:1920px;
+	background:url('../Images/fastest_time_strap_fill.png') no-repeat;
+}
+
+.fastestFingerContestantsDiv {
+	width:1920px;
+	height:845px;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.logoContainerDiv {
+	background-color:black;
+	width:1920px;
+	height:1080px;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.logoDiv{
+	width:450px;
+	height:450px;
+	top:0px;
+	bottom:0px;
+	right:0px;
+	left:0px;
+}
+
+.stageContainerDiv {
+	width:1920px;
+	height:1080px;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	overflow:hidden;
+	background:url('../Images/backGround.png') no-repeat;
+}
+
+.fastestFingerRevealOrderDiv{
+	background:url('../Images/fastest_finger_tree_background.png') no-repeat;
+	height:1080px;
+	width:760px;
+	right:-760px;
+	top:0px;
+	bottom:0px;
+}
+
+.fastestFingerTreeAnswerDiv{
+	background:url('../Images/fastest_tree_strap_fill.png') no-repeat;
+	width:780px;
+	height:96px;
+	left:760px;
+}
+
+.fastestFingerTreeQuestionDiv {
+	width:500px;
+	height:390px;
+	top:150px;
+	left:50px;
+	line-height:1.25;
+}
+
+.leftAnswerDiv {
+	width:857px;
+	height:96px;
+	left:132px;
+}
+
+.lifeLinesLeftStrapDiv {
+	width:1696px;
+	height:200px;
+	background:url('../Images/large_lifeline_strap_holder.png') no-repeat;
+	bottom:22px;
+	left:1920px;
+	overflow:hidden;
+}
+
+.lifelineTreeDiv {
+	top:-50px;
+	bottom:-50px;
+	right:-50px;
+	left:-50px;
+	width:123px;
+	height:100px;
+}
+
+.lifelineTreeHolderDiv{
+	width:123px;
+	height:100px;
+}
+
+.lifelineStrapHolderDiv{
+	width:200px;
+	height:162px;
+}
+
+.lifeLineStrapDiv {
+	height:140px;
+	width:171px;
+	top:-50px;
+	left:-50px;
+	bottom:-50px;
+	right:-50px;
+}
+
+.hotseatTimerDiv{
+	bottom:388px;
+	left:257px;
+	opacity:0;
+	-mz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.millionaireWinnerNameDiv{
+	width:1920px;
+	height:80px;
+	left:0px;
+	right:0px;
+	top:50px;
+	color:white;
+	font-family:CopperplateBold;
+	text-align:center;
+	font-size:60pt;
+	letter-spacing:2px;
+}
+
+.millionaireWinnerDiv {
+	width:1920px;
+	height:130px;
+	left:0px;
+	right:0px;
+	bottom:57px;
+	color:#EA932C;
+	font-family:CopperplateBold;
+	text-align:center;
+	font-size:80pt;
+	letter-spacing:5px;
+}
+
+.millionaireWinnerTitleDiv {
+	width:1920px;
+	height:387px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.moneyTreeDiv {
+	background:url('../Images/tree_background.png') no-repeat;
+	background-position-x:31px;
+	height:1080px;
+	width:792px;
+	right:-792px;
+	top:0px;
+	bottom:0px;
+	overflow:hidden;
+}
+
+.newtpStrapDiv {
+	width:1920px;
+	height:387px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.newtpTextDiv {
+	background:url('../Images/Small_TPM_Strap_Background.png') no-repeat;
+	width:1920px;
+	height:90px;
+	bottom:273px;
+	left:0px;
+	right:0px;
+}
+
+.pafClockDiv {
+	width:400px;
+	height:400px;
+	background:url('../Images/paf_clock_background.png') no-repeat;
+	bottom:550px;
+	right:-400px;
+}
+
+.pafClockTimeDiv {
+	font-family:Copperplatebold;
+	color:white;
+	font-size:120pt;
+	width:400px;
+	height:164px;
+	left:0px;
+	right:0px;
+	top:120px;
+	text-align:center;
+	text-shadow: 0px 0px 25px #00bbff;
+}
+
+.passStrapDiv {
+	width:466px;
+	height:54px;
+	background:url('../Images/pass_strap.png') no-repeat;
+	top:124px;
+	right:203px;
+}
+
+.passStrapGlintDiv {
+	position:absolute;
+	background:linear-gradient(45deg, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 65%);
+	background-repeat:no-repeat;
+	background-position-x:-350px;
+	width:476px;
+	height:64px;
+	top:-5px;
+	left:-5px;
+	-webkit-mask-image:url('../Images/pass_strap_alpha.png');
+	-webkit-mask-repeat:no-repeat;
+}
+
+.rightAnswerDiv {
+	width:857px;
+	height:96px;
+	right:133px;
+}
+
+.questionStrapDiv {
+	width:1920px;
+	height:192px;
+	background:url('../Images/Large_Strap_Fill.png') no-repeat;
+	bottom:220px;
+	left:0px;
+	right:0px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.stageBackgroundDiv {
+	width:1920px;
+	height:1080px;
+	top:0px;
+	bottom:0px;
+	right:0px;
+	left:0px;
+}
+
+.timerBarDiv {
+	width:1394px;
+	height:12px;
+	background:url('../Images/timer/timer_bar.png') no-repeat;
+	bottom:3px;
+	left:6px;
+	right:0px;
+	opacity:1;
+	-moz-opacity:1;
+	-webkit-opacity:1;
+}
+
+.timerBarFillDiv {
+	width:1394px;
+	height:12px;
+	background:url('../Images/timer/timer_bar_fill.png') no-repeat;
+	bottom:3px;
+	left:6px;
+	right:0px;
+	transform-origin:left;
+	scale:0% 1;
+	image-rendering:pixelated;
+	opacity:1;
+	-moz-opacity:1;
+	-webkit-opacity:1;
+}
+
+.timerBarGradientDiv {
+	width:1406px;
+	height:18px;
+	background:url('../Images/timer/timer_bar_gradient.png') no-repeat;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	opacity:1;
+	-moz-opacity:1;
+	-webkit-opacity:1;
+}
+
+.totalPrizeMoneyDiv {
+	width:1920px;
+	height:387px;
+	left:0px;
+	right:0px;
+	bottom:-300px;
+}
+
+.totalPrizeDiv {
+	width:1920px;
+	height:60px;
+	left:0px;
+	right:0px;
+	top:101px;
+	color:white;
+	font-family:Verdana;
+	text-align:center;
+	font-size:43pt;
+	text-shadow:2px 2px 0px black;
+}
+
+.totalPrizeMoneyWonDiv {
+	width:1920px;
+	height:130px;
+	left:-12px;
+	right:0px;
+	bottom:64px;
+	color:#FFA71E;
+	font-family:'Copperplate31bc';
+	text-align:center;
+	font-size:94pt;
+	text-shadow:-1px -1px 0px black, 0px -1px 0px black, 1px -1px 0px black, -1px 0px 0px black, 1px 0px 0px black, -1px 1px 0px black, 0px 1px 0px black, 1px 1px 0px black, 4px 4px 0px black;
+	letter-spacing:-3px;
+	scale:100% 100%;
+}
+
+.winStrapDiv {
+	width:1920px;
+	height:192px;
+	background:url('../Images/Large_Win_Strap_Filled.png') no-repeat;
+	left:0px;
+	right:0px;
+	bottom:71px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}

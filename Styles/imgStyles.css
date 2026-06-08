@@ -1,0 +1,158 @@
+img {
+	position:absolute;
+	margin:auto;
+}
+
+.fastestFingerLeftGlowImg {
+	top:0px;
+	bottom:0px;
+	left:400px;
+}
+
+.fastestFingerRightGlowImg {
+	top:0px;
+	bottom:0px;
+	right:400px;
+}
+
+.fastestTimeCorrectFillImg {
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.fastestTreeAnswerDiagonalImg {
+	top:0px;
+	bottom:0px;
+	left:40px;
+	width:30px;
+}
+
+.finalImg {
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.diagonalImg {
+	top:0px;
+	bottom:0px;
+	left:50px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.correctImg {
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.hotseatSparkleImg {
+	background:url('../Images/sparkle_sheet.png') no-repeat;
+	width:128px;
+	height:128px;
+	bottom:-56px;
+	left:-55px;
+	transform:scale(2);
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:1;
+	animation: moveSpritesheet 1s steps(25) infinite;
+}
+
+@keyframes moveSpritesheet {
+	from {
+		background-position: 0px;
+	}
+	to {
+		background-position: -3200px;
+	}
+}
+
+.lifelineCenterImg {
+	width:150px;
+	height:122px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.lifelineCenterGlowImg {
+	top:-30px;
+	bottom:-30px;
+	left:-30px;
+	right:-30px;
+	width:150px;
+	height:122px;
+}
+
+.lifelineTreeImg {
+	height:100px;
+}
+
+.lifelineStrapImg {
+	height:140px;
+}
+
+.lifelineYellowTreeImg {
+	height:100px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.lifelineYellowStrapImg {
+	height:140px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.lifelineUsedImg{
+	height:100px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.lifelineUsedStrapImg{
+	height:140px;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.moneyTreeDiagonalImg{
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	margin:auto;
+}
+
+.newtpImg{
+	bottom:102px;
+	left:0px;
+	right:0px;
+}
+
+.sideStrapGoldImg{
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.sideStrapGoldFillImg{
+	z-index:-1;
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}
+
+.largeTPMStrapGoldFillImg{
+	opacity:0;
+	-moz-opacity:0;
+	-webkit-opacity:0;
+}

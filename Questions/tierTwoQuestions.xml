@@ -1,0 +1,135 @@
+﻿<questions>
+	<fastest difficulty="0">
+		<text>Put the following letters in order to spell a popular man's name.</text>
+		<a>N</a>
+		<b>O</b>
+		<c>R</c>
+		<d>M</d>
+		<correctOrder>
+			<one>a</one>
+			<two>b</two>
+			<three>c</three>
+			<four>d</four>
+		</correctOrder>
+	</fastest>
+	<question>
+		<category></category>
+		<text></text>
+		<a correct="no"></a>
+		<b correct="no"></b>
+		<c correct="no"></c>
+		<d correct="no"></d>
+	</question>
+	<question>
+		<category></category>
+		<text></text>
+		<a correct="no"></a>
+		<b correct="no"></b>
+		<c correct="no"></c>
+		<d correct="no"></d>
+	</question>
+	<question>
+		<category></category>
+		<text></text>
+		<a correct="no"></a>
+		<b correct="no"></b>
+		<c correct="no"></c>
+		<d correct="no"></d>
+	</question>
+	<question>
+		<category></category>
+		<text></text>
+		<a correct="no"></a>
+		<b correct="no"></b>
+		<c correct="no"></c>
+		<d correct="no"></d>
+	</question>
+	<question>
+		<category></category>
+		<text></text>
+		<a correct="no"></a>
+		<b correct="no"></b>
+		<c correct="no"></c>
+		<d correct="no"></d>
+	</question>
+	<question>
+		<category>Entertainment: Video Games</category>
+		<text>Who voices the infamous Citadel Station A.I known as S.H.O.D.A.N, in the System Shock games?</text>
+		<a correct="no">Jennifer Hale</a>
+		<b correct="no">Jenn Taylor</b>
+		<c correct="yes">Terri Brosius</c>
+		<d correct="no">Lori Alan</d>
+	</question>
+	<question>
+		<category>Entertainment: Video Games</category>
+		<text>How many different notes is the tune, 'Song of Healing', comprised of in 'The Legend of Zelda: Majora's Mask'?</text>
+		<a correct="no">1</a>
+		<b correct="yes">3</b>
+		<c correct="no">4</c>
+		<d correct="no">6</d>
+	</question>
+	<question>
+		<category>Vehicles</category>
+		<text>When was Tesla founded?</text>
+		<a correct="no">2008</a>
+		<b correct="no">2007</b>
+		<c correct="no">2005</c>
+		<d correct="yes">2003</d>
+	</question>
+	<question>
+		<category>Entertainment: Video Games</category>
+		<text>Which of these is NOT a game under the Worms series?</text>
+		<a correct="no">Clan Wars</a>
+		<b correct="yes">Major Malfunction</b>
+		<c correct="no">Ultimate Mayhem</c>
+		<d correct="no">Crazy Golf</d>
+	</question>
+	<question>
+		<category>Mythology</category>
+		<text>According to Japanese folklore, what is the favorite food of the Kappa.</text>
+		<a correct="no">Kabocha</a>
+		<b correct="no">Nasu</b>
+		<c correct="no">Soba</c>
+		<d correct="yes">Cucumbers</d>
+	</question>
+	<question>
+		<category>Entertainment: Film</category>
+		<text>What film did James Cameron's Avatar dethrone as the highest-grossing film ever?</text>
+		<a correct="yes">Titanic</a>
+		<b correct="no">Star Wars</b>
+		<c correct="no">Gone with the Wind</c>
+		<d correct="no">Jaws</d>
+	</question>
+	<question>
+		<category>Entertainment: Video Games</category>
+		<text>Who is the developer of the game 'Rocket League'?</text>
+		<a correct="no">Roll7</a>
+		<b correct="no">Digital Happiness</b>
+		<c correct="yes">Psyonix</c>
+		<d correct="no">People can fly</d>
+	</question>
+	<question>
+		<category>Entertainment: Television</category>
+		<text>Who was the first Big Brother US winner to win with a perfect game?</text>
+		<a correct="no">Ian Terry</a>
+		<b correct="no">Jordan Lloyd</b>
+		<c correct="no">Rachael Reilly</c>
+		<d correct="yes">Dan Gheesling</d>
+	</question>
+	<question>
+		<category>Science: Computers</category>
+		<text>What was Bitcoin's block size limit in 2010?</text>
+		<a correct="no">1KB</a>
+		<b correct="yes">1MB</b>
+		<c correct="no">1GB</c>
+		<d correct="no">1TB</d>
+	</question>
+	<question>
+		<category>General Knowledge</category>
+		<text>What is the defining characteristic of someone who is described as hirsute?</text>
+		<a correct="yes">Hairy</a>
+		<b correct="no">Rude</b>
+		<c correct="no">Funny</c>
+		<d correct="no">Tall</d>
+	</question>
+</questions>

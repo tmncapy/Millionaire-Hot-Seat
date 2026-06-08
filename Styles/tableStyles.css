@@ -1,0 +1,174 @@
+table {
+	margin:auto;
+	position:absolute;
+	padding:0px;
+}
+
+.moneyTreeTable {
+	line-height: 0.7;
+	font-size: 0;
+	left:61px;
+	bottom:116px;
+	border-collapse:collapse;
+}
+
+.moneyTreeAmountTd {
+	font-family:'Copperplate31bc';
+	font-size:33pt;
+	color:#FFFFFF;
+	padding-left:25px;
+	width:800px;
+	height:48px;
+	text-align:left;
+	text-shadow:2px 1px 0px black;
+	letter-spacing:0.6px;
+	transform:scale(1, 1) translateX(0px);
+	background-size:cover;
+	position:relative;
+	z-index:1;
+}
+
+.moneyTreeAmountReachedTd {
+	font-family:'Copperplate31bc';
+	font-size:33pt;
+	color:#000000;
+	padding-left:25px;
+	width:800px;
+	height:48px;
+	text-align:left;
+	letter-spacing:0.6px;
+	transform:scale(1, 1) translateX(0px);
+	background-size:cover;
+	position:relative;
+	z-index:1;
+}
+
+.moneyTreeAmountReachedWhiteTd {
+	font-family:'Copperplate31bc';
+	font-size:33pt;
+	color:#FFFFFF;
+	padding-left:25px;
+	width:800px;
+	height:48px;
+	text-align:left;
+	text-shadow:2px 1px 0px black;
+	letter-spacing:0.6px;
+	transform:scale(1, 1) translateX(0px);
+	background-size:cover;
+	position:relative;
+	z-index:1;
+}
+
+.moneyTreeAmountTopPrizeTd {
+	font-family:'Copperplate31bc';
+	font-size:33pt;
+	color:#FFFFFF;
+	padding-left:25px;
+	width:800px;
+	height:48px;
+	text-align:left;
+	text-shadow:2px 1px 0px black;
+	letter-spacing:0.6px;
+	transform:scale(1.3, 1.3) translateX(38px);
+	background-size:cover;
+	position:relative;
+	z-index:1;
+}
+
+.moneyTreeAmountTierOneTd {
+	font-family:'Copperplate31bc';
+	font-size:33pt;
+	color:#FFFFFF;
+	padding-left:25px;
+	width:800px;
+	height:48px;
+	text-align:left;
+	text-shadow:2px 1px 0px black;
+	letter-spacing:0.6px;
+	transform:scale(1, 1) translateX(0px);
+	background-size:cover;
+	position:relative;
+	z-index:1;
+}
+
+.moneyTreeAmountTierTwoTd {
+	font-family:'Copperplate31bc';
+	font-size:33pt;
+	color:#FFFFFF;
+	padding-left:25px;
+	width:800px;
+	height:48px;
+	text-align:left;
+	text-shadow:2px 1px 0px black;
+	letter-spacing:0.6px;
+	transform:scale(1, 1) translateX(0px);
+	background-size:cover;
+	position:relative;
+	z-index:1;
+}
+
+.moneyTreeAmountTierThreeTd {
+	font-family:'Copperplate31bc';
+	font-size:33pt;
+	color:#FFFFFF;
+	padding-left:25px;
+	width:800px;
+	height:48px;
+	text-align:left;
+	text-shadow:2px 1px 0px black;
+	letter-spacing:0.6px;
+	transform:scale(1, 1) translateX(0px);
+	background-size:cover;
+	position:relative;
+	z-index:1;
+}
+
+.moneyTreeAmountWhiteTd {
+	font-family:'Copperplate31bc';
+	font-size:33pt;
+	color:#000000;
+	padding-left:25px;
+	width:800px;
+	height:48px;
+	text-align:left;
+	letter-spacing:0.6px;
+	transform:scale(1, 1) translateX(0px);
+	background-size:cover;
+	position:relative;
+	z-index:1;
+}
+
+.moneyTreeAmountBlackTd {
+	font-family:'Copperplate31bc';
+	font-size:33pt;
+	color:#000000;
+	padding-left:25px;
+	width:800px;
+	height:48px;
+	text-align:left;
+	letter-spacing:0.6px;
+	transform:scale(1, 1) translateX(0px);
+	background-size:cover;
+	position:relative;
+	z-index:1;
+}
+
+.questionTable {
+	width:1500px;
+	max-width:1500px;
+	height:100%;
+	bottom:0px;
+	top:0px;
+	margin-left:205px;
+}
+
+.questionTd {
+	vertical-align:middle;
+	font-size:29pt;
+	font-family:Verdana;
+	color:#FFFFFF;
+	letter-spacing:-1px;
+	line-height: 1.2;
+	text-align:center;
+	text-shadow:2px 2px 0px black;
+}
