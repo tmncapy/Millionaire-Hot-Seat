@@ -56,7 +56,7 @@ p {
 	font-size:30pt;
 	font-family:Verdana;
 	color:white;
-	text-align:center;
+	text-align:left;
 	left:0px;
 	right:0px;
 	text-shadow:3px 3px 0px black;
@@ -69,23 +69,20 @@ p {
 	font-size:20pt;
 	font-family:Verdana;
 	color:white;
-	text-align:center;
+	text-align:left;
 	left:0px;
 	right:0px;
 	text-shadow:3px 3px 0px black;
 	letter-spacing:1px;
 	transform-origin:center;
 	scale:100% 100%;
-	opacity:1;
-	-moz-opacity:1;
-	-webkit-opacity:1;
 }
 
 .questionsLeftP {
-	font-size:24pt;
+	font-size:20pt;
 	font-family:Verdana;
 	color:white;
-	text-align:center;
+	text-align:left;
 	left:0px;
 	right:0px;
 	text-shadow:3px 3px 0px black;
@@ -160,7 +157,7 @@ p {
 
 .newtpP {
 	font-size:83pt;
-	font-family:'Copperplate31bc';
+	font-family:'Copperplate31bc-Celador01';
 	color:white;
 	text-align:center;
 	width:100%;
@@ -185,7 +182,7 @@ p {
 
 .winningsP {
 	color:#FFFFFF;
-	font-family:'Copperplate31bc';
+	font-family:'Copperplate31bc-Celador01';
 	font-size:94pt;
 	text-align:center;
 	width:1920px;

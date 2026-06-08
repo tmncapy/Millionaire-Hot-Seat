@@ -25,7 +25,7 @@ $(document).ready(function(){
 					else if(window.GameVariables.FastestFingerSequenceCounter == 7)
 					{
 						renderMoneyTreeInfoText();
-						startShortActiveSound("hello_short.mp3");
+						startShortActiveSound("first_player.mp3");
 						window.GameVariables.IsPlayingFasestFinger = false;
 					}
 					
@@ -37,54 +37,24 @@ $(document).ready(function(){
 					{
 						slideInMoneyTree();
 						if(window.GameVariables.SkipMoneyTreeAnimation == true){
-							window.GameVariables.MoneyTreeSequenceCounter = 5;
+							window.GameVariables.MoneyTreeSequenceCounter = 2;
 						}
 						else{
-							startGeneralSound("money_tree_1.wav");
-							startLongPassiveSound("explain_rules.mp3");
-							animateMoneyTree1();
 							window.GameVariables.IsMoneyTreeAnimationPlaying = true;
 						}
 						window.GameVariables.IsMoneyTreeShowing = true;
 					}
 					else if(window.GameVariables.MoneyTreeSequenceCounter == 1)
 					{
-						startGeneralSound("money_tree_2.wav");
-						animateMoneyTree2();
+						startGeneralSound("money_tree.mp3");
+						animateMoneyTree1();
 					}
 					else if(window.GameVariables.MoneyTreeSequenceCounter == 2)
 					{
-						startGeneralSound("money_tree_3.wav");
-						animateMoneyTree3();
+						startGeneralSound("top_prize_down.mp3");
+						animateMoneyTree2();
 					}
-					else if(window.GameVariables.MoneyTreeSequenceCounter == 3)
-					{
-						startGeneralSound("money_tree_4.wav");
-						animateMoneyTree4();
-					}
-					else if(window.GameVariables.MoneyTreeSequenceCounter == 4)
-					{
-						startGeneralSound("money_tree_5.wav");
-						animateMoneyTree5();
-					}
-					else if(window.GameVariables.MoneyTreeSequenceCounter == 5)
-					{
-						startGeneralSound("money_tree_6.wav");
-						animateMoneyTree6();
-					}
-					else if(window.GameVariables.MoneyTreeSequenceCounter == 6)
-					{
-						startGeneralSound("pass_appear.mp3");
-						slideInPassLifeline();
-						animatePassStrapGlint();
-					}
-					else if(window.GameVariables.MoneyTreeSequenceCounter == 7)
-					{
-						startGeneralSound("pass_on.mp3");
-						startGeneralSound("lifeline_4_on.mp3");
-						pulsePassLifeline();
-					}
-					else if(window.GameVariables.MoneyTreeSequenceCounter >= 8)
+					else if(window.GameVariables.MoneyTreeSequenceCounter >= 3)
 					{
 						if(window.GameVariables.IsMoneyTreeAnimationPlaying == true){
 							resetMoneyTree();
@@ -105,6 +75,9 @@ $(document).ready(function(){
 		{
 			if(window.GameVariables.QuestionInProgress == true){
 				startTimer();
+			}
+			else{
+				pulseMoneyTreeAmount();
 			}
 		}
 		else if(e.keyCode == 39) // key 'right arrow' for question navigation
@@ -142,13 +115,21 @@ $(document).ready(function(){
 					showLevelStrap();
 					window.GameVariables.IsLevelStrapShowing = true;
 					if(window.GameVariables.HotSeatNewRuleset == true){
-						if(window.GameVariables.QuestionsLeft > 1){
+						if(window.GameVariables.QuestionsLeft == 1){
+							showPassStrap();
+							window.GameVariables.IsPassStrapShowing = true;
+						}
+						else if(window.GameVariables.PassBlocked == true){
 							showPassStrap();
 							window.GameVariables.IsPassStrapShowing = true;
 						}
 					}
 					else{
-						if(window.GameVariables.QuestionLevel < 10){
+						if(window.GameVariables.QuestionLevel > 8){
+							showPassStrap();
+							window.GameVariables.IsPassStrapShowing = true;
+						}
+						else if(window.GameVariables.PassBlocked == true){
 							showPassStrap();
 							window.GameVariables.IsPassStrapShowing = true;
 						}
@@ -274,12 +255,7 @@ $(document).ready(function(){
 					
 					window.GameVariables.QuestionInProgress = false;
 					
-					if(window.GameVariables.QuestionLevel < 6){
-						window.GameVariables.QuestionSequenceCounter = 0;
-					}
-					else{
-						window.GameVariables.QuestionSequenceCounter = -1;
-					}
+					window.GameVariables.QuestionSequenceCounter = 0;
 					/* END OF CORRECT ANSWER GIVEN CONTROL */
 				}
 				else if(window.GameVariables.QuestionSequenceCounter == 9){
@@ -319,13 +295,7 @@ $(document).ready(function(){
 					hideNewTPMStrap();
 					renderMoneyTreeTable(6 - window.GameVariables.ContestantsLeft);
 					
-					if(window.GameVariables.QuestionsLeft > 1){
-						window.GameVariables.QuestionSequenceCounter = 0;
-					}
-					else{
-						window.GameVariables.QuestionSequenceCounter = -1;
-					}
-					
+					window.GameVariables.QuestionSequenceCounter = 0;
 					if(window.GameVariables.ContestantsLeft > 1){
 						window.GameVariables.IsPassLifeLineUsed = false;
 					}
@@ -394,6 +364,7 @@ $(document).ready(function(){
 				window.GameVariables.IsTotalPrizeMoneyShowing = !window.GameVariables.IsTotalPrizeMoneyShowing;
 				
 				if(window.GameVariables.IsWalkingAway == true){
+					startGeneralSound("safetynet_prize.mp3")
 					window.GameVariables.IsWalkingAway = false;
 				}
 				
@@ -410,9 +381,6 @@ $(document).ready(function(){
 				
 				if(window.GameVariables.IsWalkingAway == false){
 					playFinalAnswerSound();
-					if(window.GameVariables.QuestionLevel < 6){
-						startGeneralSound("explosion.mp3");
-					}
 				}
 				
 				if(window.GameVariables.IsLevelStrapShowing == true){
@@ -437,9 +405,6 @@ $(document).ready(function(){
 				
 				if(window.GameVariables.IsWalkingAway == false){
 					playFinalAnswerSound();
-					if(window.GameVariables.QuestionLevel < 6){
-						startGeneralSound("explosion.mp3");
-					}
 				}
 				
 				if(window.GameVariables.IsLevelStrapShowing == true){
@@ -464,9 +429,6 @@ $(document).ready(function(){
 				
 				if(window.GameVariables.IsWalkingAway == false){
 					playFinalAnswerSound();
-					if(window.GameVariables.QuestionLevel < 6){
-						startGeneralSound("explosion.mp3");
-					}
 				}
 				
 				if(window.GameVariables.IsLevelStrapShowing == true){
@@ -491,9 +453,6 @@ $(document).ready(function(){
 				
 				if(window.GameVariables.IsWalkingAway == false){
 					playFinalAnswerSound();
-					if(window.GameVariables.QuestionLevel < 6){
-						startGeneralSound("explosion.mp3");
-					}
 				}
 				
 				if(window.GameVariables.IsLevelStrapShowing == true){
@@ -557,7 +516,7 @@ $(document).ready(function(){
 					if(window.GameVariables.IsInCommercial == true){
 						hideMillionaireLogo();
 						if(window.GameVariables.IsFirstQuestionOfGame == false){
-							startShortActiveSound("commercial_out.mp3");
+							startShortActiveSound("commercial.mp3");
 						}
 						else{
 							startShortActiveSound("hello_long.mp3");
@@ -568,7 +527,7 @@ $(document).ready(function(){
 						window.GameVariables.FirstTierBackgroundSoundPlaying = false;
 						setTimeout(stopLongPassiveSound, 250);
 						setTimeout(stopLongActiveSound, 250);
-						startShortActiveSound("commercial_in.mp3");
+						startShortActiveSound("commercial.mp3");
 					}
 					
 					window.GameVariables.IsInCommercial = !window.GameVariables.IsInCommercial;
@@ -583,11 +542,11 @@ $(document).ready(function(){
 						window.GameVariables.FirstTierBackgroundSoundPlaying = false;
 						setTimeout(stopLongPassiveSound, 250);
 						setTimeout(stopLongActiveSound, 250);
-						startShortActiveSound("commercial_in.mp3");
+						startShortActiveSound("commercial.mp3");
 					}
 					else if(window.GameVariables.commericalSequenceCounter == 2){
 						hideMillionaireLogo();
-						startShortActiveSound("commercial_out.mp3");
+						startShortActiveSound("commercial.mp3");
 					}
 					else if(window.GameVariables.commericalSequenceCounter == 3){
 						revealQuestionAndAnswerStraps();
@@ -733,8 +692,7 @@ $(document).ready(function(){
 				else if(window.GameVariables.passLifeLineSequenceCounter == 3){
 					setTimer();
 					revealQuestionAndAnswerStraps();
-					/* playBackgroundSound(); */
-					startLongPassiveSound("q_bed_afterpass.mp3");
+					playBackgroundSound();
 					resetTimer();
 					showLevelStrap();
 					window.GameVariables.IsLevelStrapShowing = true;
@@ -750,7 +708,7 @@ $(document).ready(function(){
 		else if(e.keyCode == 81) // key 'q' for game resume
 		{
 			if(window.GameVariables.QuestionInProgress == false){
-				startLongPassiveSound("game_resume.mp3");
+				startLongPassiveSound("explain_rules.mp3");
 			}
 		}
 		else if(e.keyCode == 83) // key 's' for switch the question animations
@@ -802,8 +760,34 @@ $(document).ready(function(){
 				}
 				
 				if(window.GameVariables.IsPassStrapShowing == false){
-					showPassStrap();
-					window.GameVariables.IsPassStrapShowing = true;
+					if(window.GameVariables.HotSeatNewRuleset == true){
+						if(window.GameVariables.QuestionsLeft == 1){
+							showPassStrap();
+							window.GameVariables.IsPassStrapShowing = true;
+						}
+						else if(window.GameVariables.IsPassLifeLineUsed == true){
+							showPassStrap();
+							window.GameVariables.IsPassStrapShowing = true;
+						}
+						else if(window.GameVariables.PassBlocked == true){
+							showPassStrap();
+							window.GameVariables.IsPassStrapShowing = true;
+						}
+					}
+					else{
+						if(window.GameVariables.QuestionLevel > 8){
+							showPassStrap();
+							window.GameVariables.IsPassStrapShowing = true;
+						}
+						else if(window.GameVariables.IsPassLifeLineUsed == true){
+							showPassStrap();
+							window.GameVariables.IsPassStrapShowing = true;
+						}
+						else if(window.GameVariables.PassBlocked == true){
+							showPassStrap();
+							window.GameVariables.IsPassStrapShowing = true;
+						}
+					}
 				}
 			}
 		}

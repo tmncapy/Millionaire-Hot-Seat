@@ -51,44 +51,25 @@ function playBackgroundSound(){
 }
 
 function playFinalAnswerSound(){
-	if(window.GameVariables.QuestionLevel > 5){
-		startLongActiveSound(window.GameVariables.FinalAnswerSounds[window.GameVariables.QuestionLevel - 1]);
-		setTimeout(stopLongPassiveSound, 200);
-	}
+	startLongActiveSound(window.GameVariables.FinalAnswerSounds[window.GameVariables.QuestionLevel - 1]);
+	setTimeout(stopLongPassiveSound, 50);
 }
 
 function playCorrectAnswerSound(){
-	if(window.GameVariables.QuestionLevel < 6){
-		startGeneralSound(window.GameVariables.CorrectAnswerSounds[window.GameVariables.QuestionLevel - 1]);
-		setTimeout(stopLongPassiveSound, 1000);
-		
-		if(window.GameVariables.QuestionLevel == 5){
-			setTimeout(stopLongPassiveSound, 1000);
-		}
-	}
-	else if(window.GameVariables.QuestionLevel == 15){
-		startLongPassiveSound(window.GameVariables.CorrectAnswerSounds[window.GameVariables.QuestionLevel - 1]);
+	if(window.GameVariables.QuestionLevel == 15 - (6 - window.GameVariables.ContestantsLeft)){
+		stopLongPassiveSound();
+		startLongPassiveSound("lastquestion_correct.mp3");
 		setTimeout(stopLongActiveSound, 1000);
 	}
 	else{
 		startLongPassiveSound(window.GameVariables.CorrectAnswerSounds[window.GameVariables.QuestionLevel - 1]);
-		setTimeout(stopLongActiveSound, 1000);
+		setTimeout(stopLongActiveSound, 200);
 	}
 }
 
 function playWrongAnswerSound(){
-	if(window.GameVariables.QuestionLevel < 6){
-		startGeneralSound(window.GameVariables.WrongAnswerSounds[window.GameVariables.QuestionLevel - 1]);
-		setTimeout(stopLongPassiveSound, 1000);
-	}
-	else if(window.GameVariables.QuestionLevel == 6 || window.GameVariables.QuestionLevel == 11){
-		startLongPassiveSound(window.GameVariables.WrongAnswerSounds[window.GameVariables.QuestionLevel - 1]);
-		setTimeout(stopLongActiveSound, 1000);
-	}
-	else{
-		startLongPassiveSound(window.GameVariables.WrongAnswerSounds[window.GameVariables.QuestionLevel - 1]);
-		setTimeout(stopLongActiveSound, 1000);
-	}
+	startGeneralSound(window.GameVariables.WrongAnswerSounds[window.GameVariables.QuestionLevel - 1]);
+	setTimeout(stopLongActiveSound, 200);
 }
 
 function renderBackground(isAppearingCustomBackground){

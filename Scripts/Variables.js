@@ -15,9 +15,7 @@
 	gameVariables.ShowContestantLocation = true;
 	gameVariables.SkipMoneyTreeAnimation = false;
 	
-	gameVariables.CanPassText = "PASS AVAILABLE";
-	gameVariables.NoPassText = "PASS BLOCKED";
-	gameVariables.PassUsedText = "PASS PLAYED";
+	gameVariables.CantPassText = "CAN'T PASS";
 	gameVariables.NewTopPrizeText = "NEW TOP PRIZE";
 	gameVariables.QuestionsToTopPrizePrefixText = "";
 	gameVariables.QuestionsToTopPrizeSuffixText = " QUESTIONS TO TOP PRIZE";
@@ -45,10 +43,6 @@
 	/* true = The last remaining contestant, after passing the safety net, leaves with nothing if they flunk out on any subsequent question. */
 	/* false = The last remaining contestant, after passing the safety net, leaves with a guaranteed sum if they flunk out on any subsequent question. */
 	/**************/
-	gameVariables.ShowContestantsLeftOnTree = true;
-	/* true = Shows the number of contestants remaining in the game above the contestant's name in the money tree. */
-	/* false = Hides the number of contestants remaining in the game above the contestant's name in the money tree, just like in the real show. */
-	/**************/
 	gameVariables.UseMultiTierQuestions = true;
 	/* true = Uses multiple sets of questions divided into 3 tiers and the final question. */
 	/* false = Uses a fixed set of questions from questions.xml. */
@@ -56,7 +50,7 @@
 	/* Number Format Settings */
 	gameVariables.LocaleCode = "en";				/* Uses the country's locale code to determine the numbering system that the country uses. See the "List of Locales.txt" file for a list of locale codes. */
 	gameVariables.FormatOptions = {
-		style: "currency",							/* The formatting style to use. Use code "decimal" for plain number formatting and "currency" for currency formatting. */
+		style: "decimal",							/* The formatting style to use. Use code "decimal" for plain number formatting and "currency" for currency formatting. */
 		currency: "GBP",							/* The ISO currency code that is used to identify the currency. If a currency is not in the list of ISO 4217 currency codes, it will not display the symbol of said currency. See the "List of Current Currencies (List One).xml" and "List of Past Currencies (List Three).xml" files for a list of currencies (Look for the three-lettered code between <Ccy> & </Ccy>). */
 		currencyDisplay: "symbol",					/* Use code "symbol" to use a localized currency symbol (A.K.A. the default option), "narrowSymbol" to use a narrow format symbol ("$100" rather than "US$100"), "code" to use the ISO currency code and "name" to use a localized currency name instead of a symbol. */
 		numberingSystem: "latn",					/* The numbering system to be used for the amounts. Possible values include: "adlm", "ahom", "arab", "arabext", "bali", "beng", "bhks", "brah", "cakm", "cham", "deva", "diak", "fullwide", "gong", "gonm", "gujr", "guru", "hanidec", "hmng", "hmnp", "java", "kali", "khmr", "knda", "lana", "lanatham", "laoo", "latn"(Default), "lepc", "limb", "mathbold", "mathdbl", "mathmono", "mathsanb", "mathsans", "mlym", "modi", "mong", "mroo", "mtei", "mymr", "mymrshan", "mymrtlng", "newa", "nkoo", "olck", "orya", "osma", "rohg", "saur", "segment", "shrd", "sind", "sinh", "sora", "sund", "takr", "talu", "tamldec", "telu", "thai", "tibt", "tirh", "vaii", "wara", "wcho". */
@@ -64,7 +58,7 @@
 	};
 	gameVariables.ReplaceCharacterBefore = "";		/* Targets the exact character that you want to replace. */
 	gameVariables.ReplaceCharacterAfter = "";		/* Replaces the targeted character with a different one. */
-	gameVariables.NumberPrefix = "";				/* The text that displays before the amount. */
+	gameVariables.NumberPrefix = "£ ";				/* The text that displays before the amount. */
 	gameVariables.NumberSuffix = "";				/* The text that displays after the amount. */
 	gameVariables.TreeNumberingSystem = "latn";		/* The numbering system to be used for the number of questions and contestants remaining. Uses the same numbering system for the amounts. */
 	
@@ -90,28 +84,24 @@
 	
 	gameVariables.UseTopPrizeText = true;			/* If set to true, the top prize amount(s) will be displayed in text instead of a number. */
 	gameVariables.TopPrizeQuestionNumber = 15;		/* The value where the top prize text(s) are displayed above the level set by this value. */
-	gameVariables.TopPrizeText = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","£1 MILLION"];
+	gameVariables.TopPrizeText = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","£ 1 MILLION"];
 	gameVariables.UseTopPrizeLevelStrapText = true;	/* If set to true, the top prize amount shown in the Level Strap will be displayed in text instead of a number. */
 	gameVariables.TopPrizeLevelStrapQuestionNumber = 15;	/* The value where the top prize text in the Level Strap is displayed above the level set by this value. */
-	gameVariables.TopPrizeLevelStrapText = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","£1 MILLION"];
+	gameVariables.TopPrizeLevelStrapText = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","£ 1 MILLION"];
 	gameVariables.UseTopPrizeWinStrapText = true;	/* If set to true, the top prize amount shown in the Win Strap will be displayed in text instead of a number. */
 	gameVariables.TopPrizeWinStrapQuestionNumber = 15;	/* The value where the top prize text in the Win Strap is displayed above the level set by this value. */
-	gameVariables.TopPrizeWinStrapText = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","£1 MILLION"];
+	gameVariables.TopPrizeWinStrapText = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","£ 1 MILLION"];
 	gameVariables.UseNewTPStrapText = true;	/* If set to true, the top prize amount shown in the New Top Prize Strap will be displayed in text instead of a number. */
 	gameVariables.NewTPStrapQuestionNumber = 15;	/* The value where the top prize text in the New Top Prize Strap is displayed above the level set by this value. */
-	gameVariables.NewTPStrapText = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","£1 MILLION"];
+	gameVariables.NewTPStrapText = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","£ 1 MILLION"];
 	gameVariables.UseTopPrizeTPMStrapText = true;	/* If set to true, the top prize amount shown in the TPM Strap will be displayed in text instead of a number. */
 	gameVariables.TopPrizeTPMStrapQuestionNumber = 15;	/* The value where the top prize text in the TPM Strap is displayed above the level set by this value. */
-	gameVariables.TopPrizeTPMStrapText = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","£1 MILLION"];
+	gameVariables.TopPrizeTPMStrapText = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","£ 1 MILLION"];
 	gameVariables.UseZeronaireText = false;			/* If set to true, when a contestant walks away with nothing, the Zeronaire text is displayed instead of just 0 and a currency. */
 	gameVariables.ZeronaireText = "Nothing";		/* The text that displays when a contestant walks away with nothing. */
 	
-	gameVariables.CurrentContestantTextScale = 100;	/* DEFAULT: 100%; The percentage of scale on the X axis (left and right) for the text that shows the contestant that is currently in play. */
-	gameVariables.QuestionsLeftTextScale = 100;		/* DEFAULT: 100%; The percentage of scale on the X axis (left and right) for the "Questions Left" text. */
-	gameVariables.ContestantsLeftTextScale = 100;	/* DEFAULT: 100%; The percentage of scale on the X axis (left and right) for the "Contestants Left" text. */
 	gameVariables.CurrentLevelTextScale = 100;		/* DEFAULT: 100%; The percentage of scale on the X axis (left and right) for the text that shows the amount the contestant is currently playing for. */
 	gameVariables.NewTPTextScale = 100;				/* DEFAULT: 100%; The percentage of scale on the X axis (left and right) for the text that shows the new top prize. */
-	gameVariables.PassTreeTextScale = 100;			/* DEFAULT: 100%; The percentage of scale on the X axis (left and right) for the Pass text inside the money tree. */
 	gameVariables.PassStrapTextScale = 100;			/* DEFAULT: 100%; The percentage of scale on the X axis (left and right) for the Pass text that is shown below the "Current Level" strap. */
 	gameVariables.WinTextScale = 100;				/* DEFAULT: 100%; The percentage of scale on the X axis (left and right) for the text that shows the amount that the contestant has won. */
 	gameVariables.TPMTextScale = 100;				/* DEFAULT: 100%; The percentage of scale on the X axis (left and right) for the text that shows the total prize money. */
@@ -208,10 +198,10 @@
 	gameVariables.FastestFingerContestantWinners = [false,false,false,false,false,false];
 	gameVariables.FastestFingerContestantTimes = [2.54,4.54,5.54,6.54,9.54,13.54];
 	gameVariables.FastestFingerContestants = []
-	gameVariables.LightsDownSounds = ["q1_to_q5_lights_down.mp3","q1_to_q5_lights_down.mp3","q1_to_q5_lights_down.mp3","q1_to_q5_lights_down.mp3","q1_to_q5_lights_down.mp3","lights_down_1.mp3","lights_down_2.mp3","lights_down_3.mp3","lights_down_4.mp3","lights_down_5.mp3","lights_down_1.mp3","lights_down_2.mp3","lights_down_3.mp3","lights_down_4.mp3","lights_down_5.mp3"];
-	gameVariables.RoundBackgroundSounds = ["q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3","q_bed.mp3"];
-	gameVariables.FinalAnswerSounds = ["","","","","","final_answer_1.mp3","final_answer_2.mp3","final_answer_3.mp3","final_answer_4.mp3","final_answer_5.mp3","final_answer_1.mp3","final_answer_2.mp3","final_answer_3.mp3","final_answer_4.mp3","final_answer_5.mp3"];
-	gameVariables.CorrectAnswerSounds = ["correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","q15_correct.mp3"];
+	gameVariables.LightsDownSounds = ["lights_down.mp3","q1_to_q5_lights_down.mp3","q1_to_q5_lights_down.mp3","q1_to_q5_lights_down.mp3","q1_to_q5_lights_down.mp3","lights_down_1.mp3","lights_down_2.mp3","lights_down_3.mp3","lights_down_4.mp3","lights_down_5.mp3","lights_down_1.mp3","lights_down_2.mp3","lights_down_3.mp3","lights_down_4.mp3","lights_down_5.mp3"];
+	gameVariables.RoundBackgroundSounds = ["q1-5_bed.mp3","q1-5_bed.mp3","q1-5_bed.mp3","q1-5_bed.mp3","q1-5_bed.mp3","q6-10_bed.mp3","q6-10_bed.mp3","q6-10_bed.mp3","q6-10_bed.mp3","q6-10_bed.mp3","q11-15_bed.mp3","q11-15_bed.mp3","q11-15_bed.mp3","q11-15_bed.mp3","q11-15_bed.mp3"];
+	gameVariables.FinalAnswerSounds = ["final_answer.mp3","final_answer.mp3","final_answer.mp3","final_answer.mp3","final_answer.mp3","final_answer.mp3","final_answer.mp3","final_answer.mp3","final_answer.mp3","final_answer_long.mp3","final_answer_long.mp3","final_answer_long.mp3","final_answer_long.mp3","final_answer_long.mp3","final_answer_long.mp3"];
+	gameVariables.CorrectAnswerSounds = ["correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","correct.mp3","lastquestion_correct.mp3"];
 	gameVariables.WrongAnswerSounds = ["wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3","wrong.mp3"];
 
 	/* Interval/Timeout Variables */

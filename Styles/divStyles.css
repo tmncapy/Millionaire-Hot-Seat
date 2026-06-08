@@ -111,7 +111,7 @@ div {
 
 .currentLevelStrapAmountDiv{
 	color:white;
-	font-family:'Copperplate31bc';
+	font-family:'Copperplate31bc-Celador01';
 	font-size:35pt;
 	height:46px;
 	width:733px;
@@ -127,7 +127,7 @@ div {
 .currentPassStrapTextDiv{
 	color:white;
 	font-family:'Copperplate31bc-Celador01';
-	font-size:25pt;
+	font-size:26pt;
 	height:32px;
 	width:733px;
 	top:0px;
@@ -360,19 +360,6 @@ div {
 	right:203px;
 }
 
-.passStrapGlintDiv {
-	position:absolute;
-	background:linear-gradient(45deg, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 65%);
-	background-repeat:no-repeat;
-	background-position-x:-350px;
-	width:476px;
-	height:64px;
-	top:-5px;
-	left:-5px;
-	-webkit-mask-image:url('../Images/pass_strap_alpha.png');
-	-webkit-mask-repeat:no-repeat;
-}
-
 .rightAnswerDiv {
 	width:857px;
 	height:96px;
@@ -467,7 +454,7 @@ div {
 	right:0px;
 	bottom:64px;
 	color:#FFA71E;
-	font-family:'Copperplate31bc';
+	font-family:'Copperplate31bc-Celador01';
 	text-align:center;
 	font-size:94pt;
 	text-shadow:-1px -1px 0px black, 0px -1px 0px black, 1px -1px 0px black, -1px 0px 0px black, 1px 0px 0px black, -1px 1px 0px black, 0px 1px 0px black, 1px 1px 0px black, 4px 4px 0px black;

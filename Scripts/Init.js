@@ -18,7 +18,6 @@ function init(){
 	setLevelOnMoneyTree(window.GameVariables.QuestionLevel);
 	
 	$('.totalPrizeMoneyWonDiv').html(accounting.formatMoney(window.GameVariables.PrizeAmounts[window.GameVariables.QuestionLevel - 2], "$", 0));
-	$('.passStrapDiv').transition({perspective:0, 'right': '-410px'}, 1);
 	
 	/* Set initial transitions on certain elements */
 	$('.answerStrapLifeLineCenterContainerDiv').transition({perspective:0, scale:[0.2, 0.2], opacity:0}, 1);
@@ -66,19 +65,11 @@ function init(){
 		$('.contestantLocationP').css('opacity', 0);
 	}
 	
-	if(window.GameVariables.ShowContestantsLeftOnTree == false){
-		$('.contestantsRemainingP').css('opacity', 0);
-	}
-	
-	$('.passP').html(window.GameVariables.CanPassText);
+	$('.currentPassStrapTextDiv').html(window.GameVariables.CantPassText);
 	$('.newtptextP').html(window.GameVariables.NewTopPrizeText);
 	
-	document.querySelector('.contestantNowNameP').style.scale = window.GameVariables.CurrentContestantTextScale + '% 100%';
-	document.querySelector('.questionsLeftP').style.scale = window.GameVariables.QuestionsLeftTextScale + '% 100%';
-	document.querySelector('.contestantsRemainingP').style.scale = window.GameVariables.ContestantsLeftTextScale + '% 100%';
 	document.querySelector('.currentLevelStrapAmountDiv').style.scale = window.GameVariables.CurrentLevelTextScale + '% 100%';
 	document.querySelector('.newtpP').style.scale = window.GameVariables.NewTPTextScale + '% 100%';
-	document.querySelector('.passP').style.scale = window.GameVariables.PassTreeTextScale + '% 100%';
 	document.querySelector('.currentPassStrapTextDiv').style.scale = window.GameVariables.PassStrapTextScale + '% 100%';
 	document.querySelector('.winningsP').style.scale = window.GameVariables.WinTextScale + '% 100%';
 	document.querySelector('.totalPrizeMoneyWonDiv').style.scale = window.GameVariables.TPMTextScale + '% 100%';
